@@ -1,0 +1,4 @@
+com/arias/certification/runners/SignUp.java
+ com.arias.certification.runners.SignUp
+com/arias/certification/stepdefinitions/SignUpStepDefinitions.java
+ com.arias.certification.stepdefinitions.SignUpStepDefinitions
