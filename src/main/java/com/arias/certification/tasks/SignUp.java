@@ -8,10 +8,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.thucydides.core.annotations.Step;
-
-import static com.arias.certification.phptravels.userinterface.RegisterUI.SIGN_UP;
 
 public class SignUp implements Task {
     private final User user;
