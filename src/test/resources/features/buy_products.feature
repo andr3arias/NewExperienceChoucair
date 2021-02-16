@@ -13,8 +13,9 @@ Feature: Buy Products
     When She tries to add products to cart
 
     Then she sends her purchase to a new address
-      | email         | password |
-      | emma@emma.com | 123456   |
+      | firstName   | lastName   | email   | password   | address   | city   | state   | zipPostalCode   | country   | mobilePhone   | addressAlias   |
+      | <firstName> | <lastName> | <email> | <password> | <address> | <city> | <state> | <zipPostalCode> | <country> | <mobilePhone> | <addressAlias> |
+
     Examples:
-      | email         | password |
-      | emma@emma.com | 123456   |
+      | firstName | lastName  | email   | password | address      | city   | state | zipPostalCode | country       | mobilePhone | addressAlias    |
+      | Fulana    | Sultanita | a@a.com | 123456   | Av 7 Central | Dallas | Texas | 98607         | United States | 4           | Address Sultana |

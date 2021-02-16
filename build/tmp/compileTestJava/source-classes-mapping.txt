@@ -1,4 +1,8 @@
-com/arias/certification/runners/CreateAnAccount.java
- com.arias.certification.runners.CreateAnAccount
+com/arias/certification/stepdefinitions/BuyProductsStepDefinitions.java
+ com.arias.certification.stepdefinitions.BuyProductsStepDefinitions
 com/arias/certification/stepdefinitions/SignUpStepDefinitions.java
  com.arias.certification.stepdefinitions.SignUpStepDefinitions
+com/arias/certification/runners/BuyProductsRunner.java
+ com.arias.certification.runners.BuyProductsRunner
+com/arias/certification/runners/CreateAnAccountRunner.java
+ com.arias.certification.runners.CreateAnAccountRunner
