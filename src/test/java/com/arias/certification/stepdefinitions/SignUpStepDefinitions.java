@@ -1,7 +1,10 @@
 package com.arias.certification.stepdefinitions;
 
+import com.arias.certification.interactions.Highlight;
 import com.arias.certification.models.User;
-import com.arias.certification.tasks.SignUp;
+import com.arias.certification.tasks.CreateAnAccount;
+import com.arias.certification.tasks.CreateAnAccountWithWrongEmail;
+import com.arias.certification.userinterface.AuthenticationPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -39,19 +42,33 @@ public class SignUpStepDefinitions {
 
     }
 
-    @When("^She signs up on New Experience website$")
-    public void sheSignsUpOnNewExperienceWebsite(List<User> users) {
+    @When("^She tries to create an account at New Experience website$")
+    public void sheTriesToCreateAnAccountAtNewExperienceWebsite(List<User> users) {
         theActorInTheSpotlight().attemptsTo(
-                SignUp.onNewExperience(users.get(0))
+                CreateAnAccount.onNewExperience(users.get(0))
                 );
-
-
     }
 
-    @Then("^She should be able to see the text (.*)$")
+    @When("^She tries to create an account with a wrong email$")
+    public void sheTriesToCreateAnAccountWithAWrongEmail(List<User> users) {
+        theActorInTheSpotlight().attemptsTo(
+                CreateAnAccountWithWrongEmail.onNewExperience(users.get(0))
+        );
+    }
+
+    @Then("^She should see the text (.*)$")
+    public void sheShouldSeeTheText(String errorMessage) {
+        theActorInTheSpotlight().attemptsTo(
+                Ensure.that(AuthenticationPage.ERROR_MESSAGE.of(errorMessage)).text().isEqualTo(errorMessage),
+                Highlight.theTarget(AuthenticationPage.ERROR_MESSAGE.of(errorMessage))
+        );
+    }
+
+       @Then("^She should be able to see the text (.*)$")
     public void sheShouldBeAbleToSeeTheText(String greeting) {
         theActorInTheSpotlight().attemptsTo(
-                Ensure.that(GREETING.of(greeting)).text().isEqualTo(greeting)
+                Ensure.that(GREETING.of(greeting)).text().isEqualTo(greeting),
+                Highlight.theTarget(GREETING.of(greeting))
         );
      }
 

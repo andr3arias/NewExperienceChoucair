@@ -1,0 +1,18 @@
+com/arias/certification/userinterface/RegisterPage.java
+ com.arias.certification.userinterface.RegisterPage
+com/arias/certification/models/User.java
+ com.arias.certification.models.User
+com/arias/certification/tasks/Fill.java
+ com.arias.certification.tasks.Fill
+com/arias/certification/interactions/Highlight.java
+ com.arias.certification.interactions.Highlight
+com/arias/certification/userinterface/UserHomePageUI.java
+ com.arias.certification.userinterface.UserHomePageUI
+com/arias/certification/tasks/CreateAnAccount.java
+ com.arias.certification.tasks.CreateAnAccount
+com/arias/certification/userinterface/AuthenticationPage.java
+ com.arias.certification.userinterface.AuthenticationPage
+com/arias/certification/tasks/SignIn.java
+ com.arias.certification.tasks.SignIn
+com/arias/certification/tasks/CreateAnAccountWithWrongEmail.java
+ com.arias.certification.tasks.CreateAnAccountWithWrongEmail

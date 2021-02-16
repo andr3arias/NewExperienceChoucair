@@ -1,8 +1,8 @@
 package com.arias.certification.tasks;
 
 import com.arias.certification.models.User;
-import com.arias.certification.userinterface.RegisterPage;
 import com.arias.certification.userinterface.AuthenticationPage;
+import com.arias.certification.userinterface.RegisterPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
@@ -12,9 +12,9 @@ import net.thucydides.core.annotations.Step;
 
 import java.time.Duration;
 
-public class CreateAnAccount implements Task {
+public class CreateAnAccountWithWrongEmail implements Task {
     private final User user;
-    public CreateAnAccount(User user){
+    public CreateAnAccountWithWrongEmail(User user){
         this.user = user;
     }
 
@@ -24,12 +24,10 @@ public class CreateAnAccount implements Task {
         actor.attemptsTo(
                 Click.on(AuthenticationPage.SIGN_IN_MENU.waitingForNoMoreThan(Duration.ofSeconds(10))),
                 Enter.theValue(user.getEmail()).into(AuthenticationPage.EMAIL_CREATE),
-                Click.on(AuthenticationPage.BUTTON_CREATE_AN_ACCOUNT),
-                Fill.theForm(user),
-                Click.on(RegisterPage.REGISTER_BUTTON)
+                Click.on(AuthenticationPage.BUTTON_CREATE_AN_ACCOUNT)
         );
     }
-     public static CreateAnAccount onNewExperience(User user){
-        return Tasks.instrumented(CreateAnAccount.class,user);
+     public static CreateAnAccountWithWrongEmail onNewExperience(User user){
+        return Tasks.instrumented(CreateAnAccountWithWrongEmail.class,user);
      }
 }
