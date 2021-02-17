@@ -1,6 +1,8 @@
 package com.arias.certification.stepdefinitions;
 
 import com.arias.certification.models.User;
+import com.arias.certification.tasks.AddProducts;
+import com.arias.certification.tasks.SendsHerPurchase;
 import com.arias.certification.tasks.SignIn;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -32,18 +34,19 @@ public class BuyProductsStepDefinitions {
     public void sheEntersTheStoreWithHerCredentials(List<User> users) {
         theActorInTheSpotlight().can(BrowseTheWeb.with(driver));
         theActorInTheSpotlight().attemptsTo(Open.url("http://automationpractice.com/index.php"));
-        theActorInTheSpotlight().attemptsTo(SignIn.onNewExperience(users.get(0)));
+        theActorInTheSpotlight().attemptsTo(SignIn.withHerCredentials(users.get(0)));
 
     }
 
     @When("^She tries to add products to cart$")
     public void sheTriesToAddProductsToCart() {
-
+        theActorInTheSpotlight().attemptsTo(AddProducts.toCart());
     }
 
     @Then("^she sends her purchase to a new address$")
     public void sheSendsHerPurchaseToANewAddress(List<User>users) {
-
+        theActorInTheSpotlight().attemptsTo(
+                SendsHerPurchase.ToANewAddress(users.get(0)));
     }
 
 }

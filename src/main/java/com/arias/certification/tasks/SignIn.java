@@ -17,7 +17,7 @@ public class SignIn implements Task {
         this.user = user;
     }
 
-    @Step("{0} signs in on New Experience")
+    @Step("{0} sign in with her credentials")
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
@@ -27,7 +27,7 @@ public class SignIn implements Task {
                 Click.on(AuthenticationPage.SIGN_IN_BUTTON)
         );
     }
-    public static SignIn onNewExperience(User user){
+    public static SignIn withHerCredentials(User user){
         return Tasks.instrumented(SignIn.class,user);
     }
 }

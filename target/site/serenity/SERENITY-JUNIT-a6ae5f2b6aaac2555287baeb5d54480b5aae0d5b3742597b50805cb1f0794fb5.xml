@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Sign up" skipped="0" tests="4" time="73.65" timestamp="2021-02-15 08:08:37"><testcase name="Sign up successful"/><testcase name="Sign up with wrong email"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Sign up" skipped="0" tests="4" time="75.83" timestamp="2021-02-16 07:17:05"><testcase name="Sign up successful"/><testcase name="Sign up with wrong email"/></testsuite>

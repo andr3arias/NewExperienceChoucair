@@ -1,7 +1,7 @@
 package com.arias.certification.models;
 
 public class User {
-    private String title;
+
     private String firstName;
     private String lastName;
     private String email;
@@ -9,10 +9,12 @@ public class User {
     private String address;
     private String city;
     private String state;
-    private String zipPostalCode;
     private String country;
+    private String zipPostalCode;
     private String mobilePhone;
     private String addressAlias;
+    private String payMode;
+    private String homePhone;
 
     public String getFirstName() {
         return firstName;
@@ -26,7 +28,9 @@ public class User {
         return email;
     }
 
-    public String getPassword() {return password;}
+    public String getPassword() {
+        return password;
+    }
 
     public String getAddress() {
         return address;
@@ -44,10 +48,6 @@ public class User {
         return zipPostalCode;
     }
 
-    public String getCountry() {
-        return country;
-    }
-
     public String getMobilePhone() {
         return mobilePhone;
     }
@@ -56,4 +56,16 @@ public class User {
         return addressAlias;
     }
 
+
+    public String getPayMode() {
+        return payMode;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public String getHomePhone() {
+        return homePhone;
+    }
 }

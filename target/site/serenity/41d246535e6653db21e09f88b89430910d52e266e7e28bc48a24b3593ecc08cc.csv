@@ -1,3 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Sign up","Sign up successful","SUCCESS","2021-02-15T20:08:37.4013065-05:00[America/Bogota]","0.0","28.63"
-"Sign up","Sign up with wrong email","SUCCESS","2021-02-15T20:09:06.0427456-05:00[America/Bogota]","0.0","45.02"
+"Buy Products","buy products successfully","SUCCESS","2021-02-16T19:07:15.7417658-05:00[America/Bogota]","0.0","58.71"
+"Sign up","Sign up successful","SUCCESS","2021-02-16T19:17:05.8848148-05:00[America/Bogota]","0.0","30.52"
+"Sign up","Sign up with wrong email","SUCCESS","2021-02-16T19:17:36.439244-05:00[America/Bogota]","0.0","45.31"
