@@ -13,8 +13,8 @@ Feature: Sign up
       | <firstName> | <lastName> | <email> | <password> | <address> | <city> | <state> | <zipPostalCode> | <country> | <mobilePhone> | <addressAlias> |
     Then She should be able to see the text <greeting>
     Examples:
-      | firstName | lastName | email            | password | address       | city   | state | zipPostalCode | country       | mobilePhone | addressAlias | greeting                                                                                  |
-      | Andrea    | Arias    | andrea@arias.com | 123456   | Street 1 Av 1 | Dallas | Texas | 12345         | United States | 3017731159  | My House     | Welcome to your account. Here you can manage all of your personal information and orders. |
+      | firstName | lastName | email | password | address       | city   | state | zipPostalCode | country       | mobilePhone | addressAlias | greeting                                                                                  |
+      | Andrea    | Arias    | null      | 123456   | Street 1 Av 1 | Dallas | Texas | 12345         | United States | 3017731159  | My House     | Welcome to your account. Here you can manage all of your personal information and orders. |
 
 
   Scenario Outline: Sign up with wrong email

@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Sign up","Sign up successful","ERROR","2021-02-16T19:11:30.2972384-05:00[America/Bogota]","0.0","29.83"
+"Sign up","Sign up with wrong email","ERROR","2021-02-16T19:59:58.5038297-05:00[America/Bogota]","0.0","22.73"

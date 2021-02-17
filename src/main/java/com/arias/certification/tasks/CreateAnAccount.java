@@ -21,9 +21,10 @@ public class CreateAnAccount implements Task {
     @Step("{0} signs up on New Experience")
     @Override
     public <T extends Actor> void performAs(T actor) {
+        String email = user.getEmail().equals("null")  ? user.getRandomEmail() : user.getEmail();
         actor.attemptsTo(
                 Click.on(AuthenticationPage.SIGN_IN_MENU.waitingForNoMoreThan(Duration.ofSeconds(10))),
-                Enter.theValue(user.getEmail()).into(AuthenticationPage.EMAIL_CREATE),
+                Enter.theValue(email).into(AuthenticationPage.EMAIL_CREATE),
                 Click.on(AuthenticationPage.BUTTON_CREATE_AN_ACCOUNT),
                 Fill.theForm(user),
                 Click.on(RegisterPage.REGISTER_BUTTON)
@@ -32,4 +33,5 @@ public class CreateAnAccount implements Task {
      public static CreateAnAccount onNewExperience(User user){
         return Tasks.instrumented(CreateAnAccount.class,user);
      }
+
 }

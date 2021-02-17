@@ -1,5 +1,5 @@
-com/arias/certification/tasks/CreateAnAccountWithWrongEmail.java
- com.arias.certification.tasks.CreateAnAccountWithWrongEmail
+com/arias/certification/userinterface/AuthenticationPage.java
+ com.arias.certification.userinterface.AuthenticationPage
 com/arias/certification/userinterface/SummaryPage.java
  com.arias.certification.userinterface.SummaryPage
 com/arias/certification/userinterface/UserHomePageUI.java
@@ -10,27 +10,27 @@ com/arias/certification/userinterface/AddressPage.java
  com.arias.certification.userinterface.AddressPage
 com/arias/certification/userinterface/PaymentPage.java
  com.arias.certification.userinterface.PaymentPage
-com/arias/certification/interactions/Choose.java
- com.arias.certification.interactions.Choose
-com/arias/certification/tasks/AddProducts.java
- com.arias.certification.tasks.AddProducts
-com/arias/certification/tasks/SendsHerPurchase.java
- com.arias.certification.tasks.SendsHerPurchase
-com/arias/certification/userinterface/RegisterPage.java
- com.arias.certification.userinterface.RegisterPage
-com/arias/certification/tasks/FillThe.java
- com.arias.certification.tasks.FillThe
-com/arias/certification/models/User.java
- com.arias.certification.models.User
-com/arias/certification/userinterface/AuthenticationPage.java
- com.arias.certification.userinterface.AuthenticationPage
-com/arias/certification/userinterface/ProductListPage.java
- com.arias.certification.userinterface.ProductListPage
-com/arias/certification/tasks/SignIn.java
- com.arias.certification.tasks.SignIn
 com/arias/certification/userinterface/ShippingPage.java
  com.arias.certification.userinterface.ShippingPage
-com/arias/certification/tasks/CreateAnAccount.java
- com.arias.certification.tasks.CreateAnAccount
+com/arias/certification/tasks/AddProducts.java
+ com.arias.certification.tasks.AddProducts
+com/arias/certification/userinterface/ProductListPage.java
+ com.arias.certification.userinterface.ProductListPage
+com/arias/certification/userinterface/RegisterPage.java
+ com.arias.certification.userinterface.RegisterPage
+com/arias/certification/interactions/Choose.java
+ com.arias.certification.interactions.Choose
+com/arias/certification/tasks/FillThe.java
+ com.arias.certification.tasks.FillThe
+com/arias/certification/tasks/CreateAnAccountWithWrongEmail.java
+ com.arias.certification.tasks.CreateAnAccountWithWrongEmail
 com/arias/certification/tasks/Fill.java
  com.arias.certification.tasks.Fill
+com/arias/certification/tasks/SendsHerPurchase.java
+ com.arias.certification.tasks.SendsHerPurchase
+com/arias/certification/tasks/SignIn.java
+ com.arias.certification.tasks.SignIn
+com/arias/certification/models/User.java
+ com.arias.certification.models.User
+com/arias/certification/tasks/CreateAnAccount.java
+ com.arias.certification.tasks.CreateAnAccount

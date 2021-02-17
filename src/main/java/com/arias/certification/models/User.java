@@ -1,5 +1,7 @@
 package com.arias.certification.models;
 
+import java.util.UUID;
+
 public class User {
 
     private String firstName;
@@ -25,7 +27,10 @@ public class User {
     }
 
     public String getEmail() {
-        return email;
+        return email.trim();
+    }
+    public String getRandomEmail() {
+        return "random-" + UUID.randomUUID().toString() + "@choucair.com";
     }
 
     public String getPassword() {
