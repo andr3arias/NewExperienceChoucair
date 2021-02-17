@@ -95,7 +95,7 @@
         <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
         <div id="projectname-banner" style="float:right">
             <span class="projectname">
-                <span class="projecttitle">Serenity and Junit with Page Object Model</span>
+                <span class="projecttitle">Choucair Automation Test</span>
                 <span class="projectsubtitle"></span>
             </span>
         </div>
@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-02-2021 19:07</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-02-2021 21:05</span>
     <br style="clear:left"/>
 </div>
 
@@ -178,9 +178,9 @@ To buy according to my needs
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">buy products successfully
+                                <span class="failing-color">buy products successfully
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -201,6 +201,52 @@ To buy according to my needs
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.arias.certification.interactions.Choose.performAs(Choose.java:23)<br />com.arias.certification.tasks.SendsHerPurchase.performAs(SendsHerPurchase.java:21)<br />com.arias.certification.stepdefinitions.BuyProductsStepDefinitions.sheSendsHerPurchaseToANewAddress(BuyProductsStepDefinitions.java:48)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //select[@id='id_address_delivery'] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>com.arias.certification.interactions.Choose.performAs(Choose.java :23)<br />com.arias.certification.tasks.SendsHerPurchase.performAs(SendsHerPurchase.java :21)<br />com.arias.certification.stepdefinitions.BuyProductsStepDefinitions.sheSendsHerPurchaseToANewAddress(BuyProductsStepDefinitions.java :48)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource12869886088263841109.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="571f1ce482ea82d294dc6ef8c9b76078e58e4c56de7b97e0eacbfd828bdac48e.png" title=" Example: {email=a@a.com, password=123456, address=Av 7 Central, city=Dallas, state=Texas, zipPostalCode=98607, country=United States, homePhone=4, addressAlias=new address 2, payMode=Pay by check}" width="1920"/>
@@ -219,11 +265,8 @@ To buy according to my needs
 | Av 7 Central | Dallas | Texas | 98607 | United States | 4 | new address 2 | Pay by check |" width="1920"/>
                 <img src="7802142573419282272c14f6efad64f6b8e329786d9bf4e9c922d1b810b8f58d.png" title=" Andrea sends her purchase" width="1920"/>
                 <img src="7802142573419282272c14f6efad64f6b8e329786d9bf4e9c922d1b810b8f58d.png" title=" Andrea fills the form with his personal information" width="1920"/>
-                <img src="3f94a2ceea0d878e052cf27fff272f86a965a5bca9ee35fcc25624f849496d0b.png" title=" Andrea sends her purchase (completed)" width="1920"/>
-                <img src="3f94a2ceea0d878e052cf27fff272f86a965a5bca9ee35fcc25624f849496d0b.png" title=" Then she sends her purchase to a new address
-| address | city | state | zipPostalCode | country | homePhone | addressAlias | payMode |
-| Av 7 Central | Dallas | Texas | 98607 | United States | 4 | new address 2 | Pay by check | (completed)" width="1920"/>
-                <img src="3f94a2ceea0d878e052cf27fff272f86a965a5bca9ee35fcc25624f849496d0b.png" title=" Example: {email=a@a.com, password=123456, address=Av 7 Central, city=Dallas, state=Texas, zipPostalCode=98607, country=United States, homePhone=4, addressAlias=new address 2, payMode=Pay by check} (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="08e47bf6f5eef01fd6ab12423b34ba21336578bb485767684898901ce45a5ae3.png" title=" Andrea choose" width="1920"/>
+                <img src="08e47bf6f5eef01fd6ab12423b34ba21336578bb485767684898901ce45a5ae3.png" title=" Andrea select new address 2 on Choose a delivery address: <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

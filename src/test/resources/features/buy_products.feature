@@ -18,5 +18,5 @@ Feature: Buy Products
 
     Examples:
       | email   | password | address      | city   | state | zipPostalCode | country       | homePhone | addressAlias | payMode      |
-      |a@a.com | 123456   | Av 7 Central | Dallas | Texas | 98607         | United States | 4         | new address 2 | Pay by check |
+      |a@a.com | 123456   | Av 7 Central | Dallas | Texas | 98607         | United States | 4         | new address 13 | Pay by check |
 

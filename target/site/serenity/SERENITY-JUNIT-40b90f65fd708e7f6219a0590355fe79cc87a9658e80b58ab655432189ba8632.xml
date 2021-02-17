@@ -1,1 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Buy Products" skipped="0" tests="1" time="58.71" timestamp="2021-02-16 07:07:15"><testcase name="buy products successfully"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Buy Products" skipped="0" tests="1" time="48.28" timestamp="2021-02-16 09:05:06"><testcase name="buy products successfully"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.arias.certification.interactions.Choose.performAs(Choose.java:23)&#13;
+com.arias.certification.tasks.SendsHerPurchase.performAs(SendsHerPurchase.java:21)&#13;
+com.arias.certification.stepdefinitions.BuyProductsStepDefinitions.sheSendsHerPurchaseToANewAddress(BuyProductsStepDefinitions.java:48)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>
